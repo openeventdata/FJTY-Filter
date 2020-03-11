@@ -1,0 +1,3 @@
+0-codeable-auto: Trump, Xi, WHO
+8-covid-19: coronavirus, covid-19, COVID-19
+3-gold-prices: Gold prices
