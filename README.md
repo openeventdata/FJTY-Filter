@@ -1,6 +1,6 @@
-# FJTYFilter system
+# FJTY-Filter system
 
-The FJTYFilter system is a series of Python programs for pre-filtering news articles using an SVM classifier trained by example
+The FJTY-Filter system is a series of Python programs for pre-filtering news articles using an SVM classifier trained by example
 (sample files are included).
 The system uses the [PLOVER data-exchange format](https://github.com/openeventdata/PLOVER): [http://ploverdata.org], [the spaCy
 natural language processing system](https://spacy.io/), and Python [scikit-learn](https://scikit-learn.org/stable/) machine learning package for the SVM.
@@ -94,7 +94,7 @@ Prerequisites
 1. `spaCy` and the relevant routines from `sklearn` need to be installed.
 
 2. `FJTYFilt_make_wordlists.py` and `FJTYFilt-plovigy.py` both use stories (not sentences) in the PLOVER data exchange (PDE) format: as usual, the easiest way to grok this is just look
-at the sample cases in *demo-REUT-20-02-25-wordlists.jsonl*
+at the sample cases in *demo-REUT-20-02-25-stories.jsonl* and *demo-REUT-20-02-25-wordlists.jsonl*.
 
 Programs
 ========
@@ -184,6 +184,11 @@ Set of training cases: most of these are mode-specific; the remaining two are a 
 FJTY_SVM_Models.zip
 --------------------
 Estimated SVM models: `FJTYFilt_evaluate.py` is currently set to use these
+
+
+demo-REUT-20-02-25-stories.jsonl.zip
+------------------------------------
+Sample PDE *-stories* file
 
 
 demo-REUT-20-02-25-wordlists.jsonl
