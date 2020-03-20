@@ -134,7 +134,7 @@ for kcase, xv in enumerate(XP_test):
     if not MODE or pred[0] == MODE:
         urls.append(caseurl[kcase])
         print(urls[-1])
-        fout.write(str({"mode": str(pred[0]) + "-" + FJFILT_CATEGORIES[pred[0]][1], 
+        fout.write(json.dumps({"mode": str(pred[0]) + "-" + FJFILT_CATEGORIES[pred[0]][1], 
                         "id": caseurl[kcase][0], 
                         "title": caseurl[kcase][1]})
                          + '\n')
